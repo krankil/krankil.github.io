@@ -5,5 +5,5 @@ export var setPriceList = (priceList) => {
 };
 
 export var getPrice = (itemId, quantity) => {
-    return 500;
+    return aPriceList[itemId]*quantity;
 };
