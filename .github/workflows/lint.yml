@@ -3,36 +3,26 @@ name: Lint
 on: pull_request
 
 env:
-
   NODE_VERSION: 19
 
 jobs:
-
   lint:
-
     name: lint
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: install nodejs
-
         uses: actions/setup-node@v2
-
         with:
-
           node-version: ${{env.NODE_VERSION}}
 
-      - name: code checkout
 
+      - name: code checkout
         uses: action/checkout@v2
 
-      - name: install dependencies
 
+      - name: install dependencies
         run: npm ci
 
       - name: code linting
-
         run: npm run lint
 
