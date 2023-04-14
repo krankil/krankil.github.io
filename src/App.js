@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>React Todo App</h1>
+      <h1>React Todo App1</h1>
       <ToDoInput todo={todo} setTodo={setTodo} addTodo={addTodo} />
       <ToDoList list={todos} remove={deleteTodo} />
     </div>
